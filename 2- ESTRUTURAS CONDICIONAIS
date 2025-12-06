@@ -1,0 +1,96 @@
+# 1. Peça um número e diga se ele é positivo.
+numero = float(input("Digite um número: "))
+
+if numero > 0:
+    print("O número é positivo.")
+else:
+    print("O número não é positivo.")
+
+# 2. Peça a idade e informe se é maior de idade ou menor de idade.
+idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+
+# 3. Peça uma nota (0 a 10) e informe: Aprovado (>= 7), Recuperação (5 a 6.9) ou Reprovado (< 5).
+nota = float(input("Digite uma nota entre 0 e 10: "))
+
+if nota >= 7:
+    print("Aprovado")
+elif nota >= 5:
+    print("Recuperação")
+else:
+    print("Reprovado")
+
+
+# 4. Peça um número e verifique: se é positivo, se é par e se é múltiplo de 5.
+numero = int(input("Digite um número: "))
+
+if numero > 0:
+    print("O número é positivo.")
+else:
+    print("O número não é positivo.")
+
+if numero % 2 == 0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+
+if numero % 5 == 0:
+    print("O número é múltiplo de 5.")
+else:
+    print("O número NÃO é múltiplo de 5.")
+
+# 5. Peça a cor do semáforo (verde, amarelo, vermelho) e exiba a ação correspondente.
+cor = input("Digite a cor do semáforo (verde, amarelo, vermelho): ")
+
+if cor == "verde":
+    print("Pode seguir.")
+elif cor == "amarelo":
+    print("Atenção! Prepare-se para parar.")
+elif cor == "vermelho":
+    print("Pare imediatamente.")
+else:
+    print("Cor inválida.")
+
+# 6. Peça a idade e, se for maior de idade, pergunte se tem habilitação (sim/não) e diga se pode dirigir.
+idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+    habilitacao = input("Você tem habilitação? (sim/não): ")
+    if habilitacao == "sim":
+        print("Você pode dirigir.")
+    else:
+        print("Você não pode dirigir, pois não tem habilitação.")
+else:
+    print("Você não pode dirigir, pois é menor de idade.")
+
+#7. Peça um número e mostre 'Par' ou 'Ímpar' usando apenas uma linha de código.
+print("Par" if int(input("Digite um número: ")) % 2 == 0 else "Ímpar")
+
+#8.Peça um número e diga se ele está entre 10 e 20 (inclusive).
+numero = float(input("Digite um número: "))
+
+if 10 <= numero <= 20:
+    print("O número está entre 10 e 20.")
+else:
+    print("O número NÃO está entre 10 e 20.")
+
+#9.Peça três números e diga qual é o maior.
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
+n3 = float(input("Digite o terceiro número: "))
+
+maior = max(n1, n2, n3)
+print("O maior número é:", maior)
+
+#10.Peça usuário e senha. Se forem 'admin' e '1234', exiba 'Acesso permitido', caso contrário 'Acesso negado'.
+usuario = input("Usuário: ")
+senha = input("Senha: ")
+
+if usuario == "admin" and senha == "1234":
+    print("Acesso permitido")
+else:
+    print("Acesso negado")
